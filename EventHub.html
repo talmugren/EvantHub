@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div></div>
+        <img src="TheEventHub.png" height="1" alt="Logo" class="logo">
+        </div>
+    
+
+        <div class="container">
+            
+            <a    style=" position: absolute; top: 50px; left: 5px;
+            href="#login" class="button">Login</a>
+            <a style="position: absolute; top: 50px; left:90px;" 
+            href="#about" class="button">About us</a>
+        </div>
+    </header>
+    <main>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>What is Event Hub </h2>
+                <p>Event mangment websit you can invite your guest and mange your event through Event Hub also you can communucate with your guest and view the attendance list</p>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <h2> Our Feature </h2>
+                <div class="feature-box">
+                    <div class="feature">
+                        <h3> Easy to use </h3>
+                        <p>designed to be easy for the users </p>
+                    </div>
+                    <div class="feature">
+                        <h3>clear design</h3>
+                        <p>Atractive design </p>
+                    </div>
+                    <div class="feature">
+                        <h3> Free </h3>
+                        <p>you can use the website without any fees </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="login"> <div class="login-container">
+        <h1>Login </h1>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div> </section>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    <p class="register-link"> You dont have an Account
+        <a href="signup.html" target="_blank">Register Now</a>
+    </p>    </div>
+    <footer class="footer">
+        <p>©</p>
+    </footer>
+</body>
+</html>
+<style>
+    body {
+    
+    background-color:#f7f0e6;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+.logo {
+    width: 100%; /* Make the logo span the entire width */
+    height: 300px; /* Maintain the aspect ratio */
+    object-fit: cover; /* Adjust how the image fills the space */
+}
+/* الهيدر */
+.header {
+    color: black;
+    text-align: center;
+    padding: 50px 20px
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header p {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+}
+
+.header .button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #aa0000;
+    border-radius: 80px;
+    text-decoration: none;
+    font-size: 1rem; 
+}
+
+.header .button:hover {
+    background: #b13a3a;
+}
+
+/* قسم "من نحن" */
+.about {
+    padding: 50px 20px;
+    background: #aa0000;
+    text-align: center;
+    border-radius: 80px;
+    font-family: serif;
+    color: #f7f0e6;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f7f0e6;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #f7f0e6
+    font-family:serif;
+}
+
+/* مميزات الموقع */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+    
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #aa0000;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 80px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: serif;
+}
+
+.feature h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    color: #f7f0e6;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 1rem;
+    color: #f7f0e6;
+}
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align:center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align:center;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
+    width: 65%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 80px;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #aa;
+    box-shadow: 0 0 5px #b13a3a;
+}
+
+.login-button {
+    width: 70%;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #aa0000;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15%;
+}
+
+.login-button:hover {
+    background-color: #b13a3a;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aa;
+    text-align: center;
+} 
+
+.register-link a {
+    color: #aa0000;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+/* الفوتر */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    .login-container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align:center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align:center;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #aa;
+    box-shadow: 0 0 5px #b13a3a;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #aa0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #aa0000;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aa;
+}
+
+.register-link a {
+    color: #aa0000;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+}
+</style>
