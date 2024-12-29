@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="form-container">
+        <h1>Create New Event</h1>
+        <form>
+            <label for="event-name">Event name:</label>
+            <input type="text" id="event-name" name="event-name" required>
+
+            <label for="event-type">Event type:</label>
+            <input type="text" id="event-type" name="event-type" required>
+
+            <label for="event-photo">Photo (Optional):</label>
+            <input type="file" id="event-photo" name="event-photo" accept="image/*">
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="organizer">Organizer's name:</label>
+            <input type="text" id="organizer" name="organizer" required>
+
+            <label for="details">Additional details (Optional):</label>
+            <textarea id="details" name="details" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+
+            <button type="button" class="cancel-button" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

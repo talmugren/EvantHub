@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/285e4cb154.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>  
+    <img src="Event_Hub.png" alt="Event Hub logo" >
+    <i class="fa-solid fa-circle-user"></i>
+    <div class="calendar-container" >
+        <div class="calendar-header">
+            <button class="nav-button" onclick="changeMonth(-1)">&lt;</button>
+            <h1 id="month-year">December 2024</h1>
+            <button class="nav-button" onclick="changeMonth(1)"> &gt;</button>
+            <button class="TodayButton" id="go-to-today" >★ Today</button>
+        </div>
+        
+
+        <div class="calendar" >
+            <!-- Days of the week -->
+            <div class="day">Sun</div>
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+            <!-- Calendar days will be dynamically inserted here -->
+        </div>
+    </div>
+    <!--target="_blank" this statement will open the referneced file in another page-->
+    <button class="create-event-button" onclick="openForm()"> + </button>
+        
+   
+  
+    <script src="script.js"></script>
+</body>
+</html>
