@@ -9,62 +9,128 @@
 </head>
 <body>
     <header class="header">
-        <div></div>
-        <img src="TheEventHub.png" height="1" alt="Logo" class="logo">
-        </div>
+        <div>
+        <img src="Event_Hub3-removebg-preview.png" alt="Logo" class="logo"></div>
     
-
+        <!--<div class="solid-line"></div>-->
         <div class="container">
             
-            <a    style=" position: absolute; top: 50px; left: 5px;
-            href="#login" class="button">Login</a>
-            <a style="position: absolute; top: 50px; left:90px;" 
+            <a    style=" position: absolute; top:40px; left: 5px;"
+            href= "#login" class="button">Login</a>
+            <a style="position: absolute; top: 40px; left:90px;"
             href="#about" class="button">About us</a>
         </div>
     </header>
     <main>
-
+        <div>
+            <img src="redf.jpeg" alt="Logo" class="pic" ></div>
         <section id="about" class="about">
-            <div class="container">
-                <h2>What is Event Hub </h2>
-                <p>Event mangment websit you can invite your guest and mange your event through Event Hub also you can communucate with your guest and view the attendance list</p>
+            <div class="colored-box bige-box"></div>
+
+            <div class=" hover-content">
+                <h2 class="hover-trigger" >What is Event Hub </h2>
+                <p  class="hidden-paragraph" style="  text-indent: 20px;">
+                        At Event Hub, we believe in the power
+                     <br>of connection and celebration.<br> 
+                        Our platform is designed to simplify<br>
+                        the way you discover, organize,<br>
+                        and enjoy events.<br>
+                        Whether you're planning a<br>
+                        corporate conference,<br> 
+                        hosting a memorable celebration,
+                        <br>or attending the next big concert,
+                        <br>Event Hub is your go-to destination
+                        <br> for seamless event management.</p>
             </div>
+           <!-- <img src="Removal-537.png" alt="Logo" class="pic2"  >--> </div>
         </section>
+        <section>
+            <div class="hover-container">
+
+                <div class="dropdown-content">
+                    <div class="calendar-container">
+                        <div class="calendar-grid">
+                            <!-- Repeat for all months -->
+                            <div class="calendar-month-container">
+                                <table class="calendar">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="7" class="calendar-month">January</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Sun</th>
+                                            <th>Mon</th>
+                                            <th>Tue</th>
+                                            <th>Wed</th>
+                                            <th>Thu</th>
+                                            <th>Fri</th>
+                                            <th>Sat</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Repeat the above block for all months -->
+                        </div>
+                    </div>
+                   
+            </div>
+        </section>  
+        
         <section class="features">
             <div class="container">
                 <h2> Our Feature </h2>
                 <div class="feature-box">
-                    <div class="feature">
-                        <h3> Easy to use </h3>
-                        <p>designed to be easy for the users </p>
+                    <div class="feature feature-box1">
+                        <h3> Event Discovery </h3>
+                        <p>Explore a wide range of events tailored 
+                            to your interests, from concerts and private
+                             gatherings. </p>
                     </div>
-                    <div class="feature">
+                    <div class="feature feature-box1">
                         <h3>clear design</h3>
-                        <p>Atractive design </p>
+                        <p>clear design so it will be easy to use design </p>
                     </div>
-                    <div class="feature">
+                    <div class="feature feature-box1">
                         <h3> Free </h3>
                         <p>you can use the website without any fees </p>
                     </div>
                 </div>
             </div>
         </section>
+        
     </main>
 
     <section id="login"> <div class="login-container">
         <h1>Login </h1>
         <form action="#" method="post">
             <div class="input-group">
-                <label for="username">Username</label>
+                <label  style="color: #f7f0e6"for="username">Username</label>
                 <input type="text" id="username" name="username" required>
             </div> </section>
             <div class="input-group">
-                <label for="password">Password</label>
+                <label style="color: #f7f0e6" for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit" class="login-button">Login</button>
         </form>
-    <p class="register-link"> You dont have an Account
+    <p class="register-link"> You dont have an Account?
         <a href="signup.html" target="_blank">Register Now</a>
     </p>    </div>
     <footer class="footer">
@@ -75,42 +141,104 @@
 <style>
     body {
     
-    background-color:#f7f0e6;
+    background-color:#aa0000;
     margin: 0;
     font-family: 'Arial', sans-serif;
     color: #333;
     line-height: 1.6;
+    
+}
+.solid-line {
+  height: 1x;
+  background-color: #aa0000;
+  width: 100%;
+  margin: 1px 0;
+  
+}
+.pic{
+    object-fit: cover; /* Adjust how the image fills the space */
+    width:50%;
+    height:500px;
+    position: relative;
+    top: -34px;
+    left: 50%;
+    margin-bottom: 9%;
+    max-width: 500%;
+      border-radius: 40px;
+     box-shadow: 0px 4px 10px #680101;
+      z-index: -1;
+}
+.pic2{
+    object-fit: cover; /* Adjust how the image fills the space */
+    position: relative;
+    bottom:543px;    
+    right:36%;
+        margin-bottom: -9%;
+    max-width: 500px;
+      border-radius: 40px;
+      z-index: -2;
+}
+.colored-box {
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 0px;
+  border-radius: 40px;
+  width: 50%;
+  height:100px;
+  bottom:750px;
+  right: 40px;
+  text-align: center;
+  z-index:-2; /* Ensures it appears above the background image */
+ /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for a nice effect */
+  color: white;
+  
+}
+.bige-box{
+    background-color: #f7f0e6;
 }
 .logo {
-    width: 100%; /* Make the logo span the entire width */
-    height: 300px; /* Maintain the aspect ratio */
+    width: 14%; /* Make the logo span the entire width */
+    height: 110px; /* Maintain the aspect ratio */
     object-fit: cover; /* Adjust how the image fills the space */
+    position: relative;
+    bottom: 13px; 
+    left: 87%;
+    margin-bottom:0%;
 }
 /* الهيدر */
 .header {
-    color: black;
-    text-align: center;
-    padding: 50px 20px
+    background-color: #f7f0e6; /* Change to your desired color */
+    height: 95px; /* Adjust height as needed */
+    width:100%;
+            
+            /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    
 }
 
 .header h1 {
     font-size: 2.5rem;
     margin: 0;
+    top: 5px;
 }
 
 .header p {
     margin: 10px 0 20px;
     font-size: 1.2rem;
+    
+
 }
 
 .header .button {
     display: inline-block;
     padding: 10px 20px;
-    color: #fff;
-    background: #aa0000;
+    color: #aa0000;
+    /*background: #aa0000;*/
     border-radius: 80px;
     text-decoration: none;
-    font-size: 1rem; 
+    font-size: large; 
+    font-family: serif;
+    
 }
 
 .header .button:hover {
@@ -119,37 +247,46 @@
 
 /* قسم "من نحن" */
 .about {
-    padding: 50px 20px;
-    background: #aa0000;
+    padding: 25px 10px;
+    /*background: #aa0000;*/
     text-align: center;
     border-radius: 80px;
     font-family: serif;
-    color: #f7f0e6;
+    color: #ffffff;
 }
 
 .about h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    color: #f7f0e6;
+    color: #aa0000;
+    right:26%;
+    bottom:850px;
 }
 
+  
 .about p {
     font-size: 1.1rem;
-    margin: 0;
-    color: #f7f0e6
+    margin:0% ;
+    color: #ffffff;
     font-family:serif;
+
+    right:26% ; 
+    bottom:800px;
+    
 }
 
 /* مميزات الموقع */
 .features {
     padding: 50px 20px;
     text-align: center;
-    
+    margin-top: -60%;
+    margin-bottom: 0%;
 }
 
 .features h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    color: #f7f0e6;
+    font-family:serif;
 }
 
 .feature-box {
@@ -157,34 +294,45 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    /*background-color: #f7f0e6;*/
+}
+.feature-box1 {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 150px;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #f7f0e6;
 }
 
 .feature {
-    background: #aa0000;
+   
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 80px;
+    /*border: 1px solid #ddd;*/
+    border-radius: 60px;
     width: 300px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
     font-family: serif;
 }
 
 .feature h3 {
     margin: 0 0 10px;
     font-size: 1.3rem;
-    color: #f7f0e6;
+    color: #aa0000;
 }
 
 .feature p {
     margin: 0;
     font-size: 1rem;
-    color: #f7f0e6;
+    color: #aa0000;
 }
 .login-container h1 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333;
+    color: #f7f0e6;
     text-align:center;
+    font-family:serif;
 }
 
 .input-group {
@@ -200,31 +348,31 @@
 }
 
 .input-group input {
-    width: 65%;
+    width: 60%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 80px;
+    border-radius: 50px;
     box-sizing: border-box;
 }
 
 .input-group input:focus {
     outline: none;
-    border-color: #aa;
+    border-color: #aa0000;
     box-shadow: 0 0 5px #b13a3a;
 }
 
 .login-button {
-    width: 70%;
+    width: 60%;
     padding: 10px 15px;
     font-size: 16px;
-    color: #fff;
-    background-color: #aa0000;
+    color: #aa0000;
+    background-color: #f7f0e6;
     border: none;
     border-radius: 80px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 .login-button:hover {
@@ -234,12 +382,12 @@
 .register-link {
     margin-top: 15px;
     font-size: 14px;
-    color: #aa;
+    color: #f7f0e6;
     text-align: center;
 } 
 
 .register-link a {
-    color: #aa0000;
+    color: #f7f0e6;
     text-decoration: none;
 }
 
@@ -250,11 +398,11 @@
 .footer {
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: #fff;
+    background: #f7f0e6;
+    color: #aa0000;
     font-size: 0.9rem;
     .login-container {
-    background-color: #fff;
+    background-color: #f7f0e6;
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -266,7 +414,7 @@
 .login-container h1 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333;
+    color: #f7f0e6;
     text-align:center;
 }
 
@@ -276,10 +424,11 @@
 }
 
 .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #555;
+display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #f7f0e6;
+
 }
 
 .input-group input {
@@ -293,18 +442,18 @@
 
 .input-group input:focus {
     outline: none;
-    border-color: #aa;
+    border-color: #f7f0e6;
     box-shadow: 0 0 5px #b13a3a;
 }
 
 .login-button {
-    width: 100%;
+    width: 50%;
     padding: 10px 15px;
     font-size: 16px;
-    color: #fff;
+    color: #f7f0e6;
     background-color: #aa0000;
     border: none;
-    border-radius: 5px;
+    border-radius:5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -316,11 +465,11 @@
 .register-link {
     margin-top: 15px;
     font-size: 14px;
-    color: #aa;
+    color: #f7f0e6;
 }
 
 .register-link a {
-    color: #aa0000;
+    color: #f7f0e6;
     text-decoration: none;
 }
 
@@ -328,4 +477,127 @@
     text-decoration: underline;
 }
 }
+.hover-trigger {
+    font-size: 18px;
+    color: #333; /* اللون الأساسي للنص */
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+    padding-right: 20px; /* مساحة للسهم */
+}
+
+/* Add a down arrow using ::after */
+.hover-trigger::after {
+    content: "▼";
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.7s ease;
+}
+
+/* Rotate arrow on hover */
+.hover-trigger:hover::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Hidden paragraph initially */
+.hidden-paragraph {
+    max-height: 0;
+    opacity: 1; /* نجعل النص واضحًا */
+    overflow: hidden;
+    transition: max-height 1.5s ease, opacity 1.5s ease;
+    position: relative; /* لتطبيق التدرج */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)); /* التدرج من الأعلى إلى الأسفل */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)); /* دعم للمتصفحات */
+}
+
+/* Reveal paragraph on hover */
+.hover-trigger:hover + .hidden-paragraph {
+    max-height: 500px; /* السماح بظهور النص */
+    opacity: 1;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); /* إزالة التدرج */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); /* دعم للمتصفحات */
+}
+.hero img {
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.2);
+     
+}
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 4 months per row */
+    gap: 20px;
+    width: 110%;
+}
+
+.calendar-month-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f0e6;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 110%;
+    
+}
+.calendar-container {
+    position: relative;
+    bottom: 850px; /* Adjust vertical positioning */
+    left: 90px; /* Adjust horizontal positioning */
+
+
+}
+.dropdown-content {
+    display: flex;
+    flex-direction: row; /* Aligns elements in a horizontal row */
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 20px; /* Adds space between the calendar, text, and image */
+}
+
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: #aa0000;
+    color: #f7f0e6;
+    padding: 13px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.calendar td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #aa0000;
+}
+
+.calendar td:hover {
+    background-color: #aa0000;
+    color: #f7f0e6;
+    cursor: pointer;
+}
+
+.calendar-month {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    background-color: #b13a3a;
+    color:f7f0e6 ;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+
+
+
+
 </style>
