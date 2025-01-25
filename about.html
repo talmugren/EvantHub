@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f0e6;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f7f0e6;
+            padding: 15px;
+        }
+
+        header .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        header .nav-buttons a {
+            text-decoration: none;
+            background-color: #aa0000;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #f7f0e6;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        header .nav-buttons a:hover {
+            background-color: #9a2d2d;
+        }
+
+        .settings-dropdown {
+            position: relative;
+            display: inline-block;
+           
+        }
+
+        .settings-dropdown button {
+            background-color: #aa0000;
+            color: #f7f0e6;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .settings-dropdown button:hover {
+            background-color: #9a2d2d;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            text-align: left;
+            right: 0;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            z-index: 1;
+        }
+
+        .dropdown-menu a {
+            text-decoration: none;
+            background-color: #aa0000;
+            display: block;
+            padding: 13px 50px;
+            color: #ffffff;
+            font-size: 1em;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #a92e2e;
+        }
+
+        .settings-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .container {
+            padding: 50px;
+            position: relative;
+        }
+
+        .content {
+            position: relative;
+        }
+
+        .content h1 {
+            font-size: 3em;
+            color: #aa0000;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.8;
+            
+            text-align: left;
+            font-size: 1.3em;
+            color: #252525;
+            margin-bottom: 30px;
+        }
+
+        .content img {
+            display: block;
+            margin: 0 auto;
+            width: 500px;
+            height: auto;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: slide-in 1.5s ease-in-out;
+        }
+
+        footer {
+            position: fixed;
+            text-align: center;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #aa0000;
+            color: rgb(255, 255, 255);
+            padding: 0.5em;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-buttons">
+            <a href="signup.html">signup</a>
+            <a href="main.html">home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="settings-dropdown">
+            <button>  <img src="image/setting-icon-2000x2048-dbwwhrai.png" alt="Settings Icon" style="width: 24px; height: 24px; vertical-align: middle;">
+            </button>
+            <div class="dropdown-menu">
+                <a href="#">Edit Profile</a>
+                <a href="#">Log Out</a>
+                <a href="#">Settings</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1>About Us</h1>
+            <p>
+                Welcome to EventHub, your ultimate destination for event management and discovery! At EventHub, we are passionate about connecting people with unforgettable experiences. Whether you're organizing a professional conference, planning a community workshop, or seeking exciting concerts and festivals, our platform is designed to simplify your event journey. 
+                <br><br>
+                With a vision to revolutionize the event industry, EventHub offers an all-in-one solution for event organizers and attendees alike. Our platform empowers organizers with advanced tools to create, promote, and manage events efficiently while giving attendees a seamless way to discover and participate in the events that matter to them. From virtual gatherings to in-person extravaganzas, EventHub bridges the gap between ideas and execution, ensuring that every event leaves a lasting impact. 
+                <br><br>
+                We pride ourselves on fostering a vibrant community where creativity and innovation thrive. Our mission is to make every event, big or small, a memorable experience by providing top-notch features and support. With EventHub, you can say goodbye to logistical headaches and focus on what truly matters—creating connections, sharing knowledge, and enjoying the moment. Together, let’s redefine how events are planned, promoted, and experienced. Join EventHub today and be part of a community that celebrates the art of bringing people together.
+            </p>
+           
+        </div>
+    </div>
+    <footer>
+        eventhub
+    </footer>
+</body>
+</html>
