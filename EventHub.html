@@ -13,10 +13,10 @@
         <img src="Event_Hub3-removebg-preview.png" alt="Logo" class="logo"></div>
     
         <!--<div class="solid-line"></div>-->
-        <div class="container">
+        <div class="container"> 
             
-            <a    style=" position: absolute; top:40px; left: 5px;"
-            href= "#login" class="button">Login</a>
+            <a style="position: absolute; top:40px; left: 5px;" href="login.html" class="button">Login</a>
+
             <a style="position: absolute; top: 40px; left:90px;"
             href="#about" class="button">About us</a>
         </div>
@@ -117,37 +117,26 @@
         
     </main>
 
-    <section id="login"> <div class="login-container">
-        <h1>Login </h1>
-        <form action="#" method="post">
-            <div class="input-group">
-                <label  style="color: #f7f0e6"for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div> </section>
-            <div class="input-group">
-                <label style="color: #f7f0e6" for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="login-button">Login</button>
-        </form>
-    <p class="register-link"> You dont have an Account?
-        <a href="signup.html" target="_blank">Register Now</a>
-    </p>    </div>
+
     <footer class="footer">
         <p>©</p>
     </footer>
 </body>
 </html>
 <style>
-    body {
-    
-    background-color:#aa0000;
+ html, body {
+    height: 100%;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    
+    display: flex;
+    flex-direction: column;
+    background-color: #aa0000;
+    z-index: -10;
 }
+
+main {
+    flex: 1; /* Pushes the footer to the bottom */
+}
+
 .solid-line {
   height: 1x;
   background-color: #aa0000;
@@ -280,6 +269,7 @@
     text-align: center;
     margin-top: -60%;
     margin-bottom: 0%;
+    
 }
 
 .features h2 {
@@ -401,7 +391,9 @@
     background: #f7f0e6;
     color: #aa0000;
     font-size: 0.9rem;
-    .login-container {
+    position: relative;
+    top: 100%;
+   /* .login-container {
     background-color: #f7f0e6;
     padding: 20px 30px;
     border-radius: 10px;
@@ -411,7 +403,7 @@
     text-align: center;
 }
 
-.login-container h1 {
+/*.login-container h1 {
     margin-bottom: 20px;
     font-size: 24px;
     color: #f7f0e6;
@@ -476,7 +468,7 @@ display: block;
 .register-link a:hover {
     text-decoration: underline;
 }
-}
+}*/}
 .hover-trigger {
     font-size: 18px;
     color: #333; /* اللون الأساسي للنص */
@@ -545,7 +537,7 @@ display: block;
 }
 .calendar-container {
     position: relative;
-    bottom: 850px; /* Adjust vertical positioning */
+    bottom: 820px; /* Adjust vertical positioning */
     left: 90px; /* Adjust horizontal positioning */
 
 
