@@ -115,6 +115,15 @@
             </div>
         </section>
         
+            
+            <section class="carousel">
+                <button class="arrow left" onclick="prevImage()">&#10094;</button>
+                <img src="love with spice🌶️.jpeg" alt="Image 1" class="active">
+                <img src="Rotate your closet x Aperitivo society dinner party.jpeg" alt="Image 3">
+                <img src="Welcome Sign.jpeg" alt="Image 4">
+                <button class="arrow right" onclick="nextImage()">&#10095;</button>
+            </section>
+        
     </main>
 
 
@@ -123,6 +132,26 @@
     </footer>
 </body>
 </html>
+<script>
+    let currentImageIndex = 0;
+    const images = document.querySelectorAll('.carousel img');
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        showImage(currentImageIndex);
+    }
+
+    function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+        showImage(currentImageIndex);
+    }
+</script>
 <style>
  html, body {
     height: 100%;
@@ -183,6 +212,51 @@ main {
   color: white;
   
 }
+.carousel {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .carousel img {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+            display: none;
+            left: 100px;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        /* Arrows */
+        .carousel .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .carousel .arrow.left {
+            left: 10px;
+        }
+
+        .carousel .arrow.right {
+            right: 10px;
+        }
 .bige-box{
     background-color: #f7f0e6;
 }
@@ -267,7 +341,7 @@ main {
 .features {
     padding: 50px 20px;
     text-align: center;
-    margin-top: -60%;
+    margin-top: -50%;
     margin-bottom: 0%;
     
 }
