@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Navigation Menu</title>
+    <link rel="stylesheet" href="setStyle.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <main class="main-wrap">
+        <header class="main-head">
+            <div class="main-nav">
+                <nav class="navbar">
+                    <div class="navbar-nav">
+                        <div class="title">
+                            <h3>
+                                <i href="Event_Hub.png"></i>
+                                <span class="title-text">Eventhub</span>
+                            </h3>
+                        </div>
+                        <ul class="nav-list">
+                            <li class="nav-list-item">
+                                <a href="#home" class="nav-link">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span class="link-text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="#dashboard" class="nav-link">
+                                    <i class="fa-solid fa-qrcode"></i>
+                                    <span class="link-text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a href="#profile" class="nav-link">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span class="link-text">Profile</span>
+                                </a>
+                            </li>
+                           
+                            <li class="nav-list-item">
+                                <li class="nav-list-item">
+                                    <a href="#services" class="nav-link">
+                                        <i class="fa-brands fa-servicestack"></i>
+                                        <span class="link-text">Services</span>
+                                    </a>
+                                </li>
+
+                            <li class="nav-list-item">
+                                <a href="#contact" class="nav-link">
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                    <span class="link-text">Contact</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="showcase" id="home-section">
+            <div class="overlay">
+                <div class="head">
+                    <button class="toggler">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+                <div class="content">
+                    <div class="welcome">
+                        <div class="content-text">
+                            <h3>EVENTHUB</h3>
+                            <p>WELCOME</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="showcase" id="profile-section" style="display: none;">
+            <div class="overlay">
+                <div class="head">
+                    <button class="toggler">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+                <div class="profile-section">
+                    <h2 class="profile-title">Account Information</h2>
+                    <div class="profile-info">
+                        <p><strong>Full Name:</strong> <input type="text" id="profile-fullname" value="N/A" disabled></p>
+                        <p><strong>Email:</strong> <input type="email" id="profile-email" value="N/A" disabled></p>
+                        <p><strong>Username:</strong> <input type="text" id="profile-username" value="N/A" disabled></p>
+                        <p><strong>Phone:</strong> <input type="text" id="profile-phone" value="N/A" disabled></p>
+                        <p>
+                            <strong>Password:</strong>
+                            <input type="password" id="profile-password" value="N/A" disabled>
+                        </p>
+                        <p>
+                            <strong>Confirm Password:</strong>
+                            <input type="password" id="profile-confirm-password" value="N/A" disabled>
+                        </p>
+                        
+
+                    </div>
+                    <div class="profile-buttons">
+                        <button class="edit-btn" id="edit-profile">Edit</button>
+                        <button class="save-btn" id="save-profile" style="display: none;">Save</button>
+                        <button class="cancel-btn" id="cancel-profile" style="display: none;">Cancel</button>
+                    </div>
+                </div>
+                
+                <section class="showcase" id="contact-section" style="display: none;">
+                    <div class="overlay">
+                        <div class="head">
+                            <button class="toggler">
+                                <i class="fa-solid fa-bars-staggered"></i>
+                            </button>
+                        </div>
+                        <div class="contact-content">
+                            <h2>This is Contact</h2>
+                            <p>Welcome to the Contact Page</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="showcase" id="dashboard-section" style="display: none;">
+                    <div class="overlay">
+                        <div class="head">
+                            <button class="toggler">
+                                <i class="fa-solid fa-bars-staggered"></i>
+                            </button>
+                        </div>
+                        <div class="dashboard-content">
+                            <h2>Welcome to the Dashboard</h2>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="showcase" id="services-section" style="display: none;">
+                    <div class="overlay">
+                        <div class="head">
+                            <button class="toggler">
+                                <i class="fa-solid fa-bars-staggered"></i>
+                            </button>
+                        </div>
+                        <div class="services-content">
+                            <h2>Welcome to the Services</h2>
+                        </div>
+                    </div>
+                </section>
+                
+                
+    </main>
+
+    <script src="setApp.js"></script>
+</body>
+</html> 
