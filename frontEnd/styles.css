@@ -11,6 +11,7 @@ header .nav-buttons {
     gap: 15px;
 }
 
+
 header .nav-buttons a {
     text-decoration: none;
     background-color: #aa0000;
@@ -50,7 +51,7 @@ header .nav-buttons a:hover {
 .dropdown-menu {
     display: none;
     position: absolute;
-    text-align: left;
+    text-align: center;
     right: 0;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -62,7 +63,7 @@ header .nav-buttons a:hover {
     text-decoration: none;
     background-color: #aa0000;
     display: block;
-    padding: 13px 50px;
+    padding: 10px 20px;
     color: #ffffff;
     font-size: 1em;
 }
@@ -196,7 +197,7 @@ body {
 }
 
 .create-event-button {
-    position: absolute;
+    position: fixed;
     background-color: #aa0000;
     border: #aa0000;
    border-radius: 5px;
