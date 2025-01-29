@@ -85,12 +85,15 @@ document.getElementById("go-to-today").addEventListener("click", goToToday);
 // Initial render
 renderCalendar(currentDate);
 
-
+//create event js
 function openForm() {
-    window.open("CreateEvent.html","_blank");
+    //window.open("CreateEvent.html","_blank");
+    window.location.assign("CreateEvent.html");
   }
   
   function closeForm() {
-    window.close();
+    const userConfirmed = confirm("Are you sure you want to cancel? Any unsaved changes will be lost.");
+    if(userConfirmed){
     window.location.href="calendar.html";
   }
+}
