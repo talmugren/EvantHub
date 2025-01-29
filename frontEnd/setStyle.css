@@ -24,7 +24,7 @@ a{
 }
 
 .main-wrap .main-head.active {
-    width: 15%;
+    width: 20%;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -71,7 +71,6 @@ a{
 }
 .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item {
     list-style: none;
-    
     padding: 15px 10px;
     transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
     border-radius: 5px;
@@ -395,6 +394,7 @@ a{
     background-color: #7d0e0e;
     transform: scale(1.05);
 }
+
 #dashboard-section .dashboard-content h2,
 #services-section .services-content h2,
 #contact-section .contact-content h2,
