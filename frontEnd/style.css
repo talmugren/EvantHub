@@ -13,7 +13,7 @@ body {
     margin: 2rem auto;
     background-color: #f7f0e6;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 #f7caca79, 0 6px 20px 0 #f7caca79;
     padding: 1.5rem;
 }
 
@@ -32,7 +32,7 @@ body {
 .form-container input,
 .form-container textarea,
 .form-container button {
-    width: 100%;
+    width: 450px;
     padding: 0.7rem;
     margin-bottom: 1rem;
     border: 1px solid #f7f0e6;
@@ -44,16 +44,15 @@ body {
     background-color: #aa0000;
     color: #fff;
     cursor: pointer;
+    width: 500px;
 }
 
-.form-container button:hover {
-    background-color: #aa0000;
+.form-container button:hover,
+.form-container .cancel-button:hover {
+    background-color: #be4141;
+    color: #f7f0e6;
 }
 
 .form-container .cancel-button {
-    background-color: #aa0000;
-}
-
-.form-container .cancel-button:hover {
     background-color: #aa0000;
 }
