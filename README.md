@@ -1,6 +1,6 @@
 # EvantHub
 ## Overview
-+ A general description of your website
++ A general description of the website
 + What it does and its purpose
 + Who the target users are
 ## Flowchart
