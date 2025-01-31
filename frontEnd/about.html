@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="headerStyle.css">
     <title>About Us</title>
     <style>
         body {
@@ -13,82 +15,7 @@
             color: #333;
         }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f7f0e6;
-            padding: 15px;
-        }
-
-        header .nav-buttons {
-            display: flex;
-            gap: 15px;
-        }
-
-        header .nav-buttons a {
-            text-decoration: none;
-            background-color: #aa0000;
-            border-radius: 20px;
-            padding: 10px 20px;
-            font-size: 1em;
-            color: #f7f0e6;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        header .nav-buttons a:hover {
-            background-color: #9a2d2d;
-        }
-
-        .settings-dropdown {
-            position: relative;
-            display: inline-block;
-           
-        }
-
-        .settings-dropdown button {
-            background-color: #aa0000;
-            color: #f7f0e6;
-            font-size: 1em;
-            font-weight: bold;
-            border: none;
-            border-radius: 20px;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-
-        .settings-dropdown button:hover {
-            background-color: #9a2d2d;
-        }
-
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            text-align: left;
-            right: 0;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 20px;
-            z-index: 1;
-        }
-
-        .dropdown-menu a {
-            text-decoration: none;
-            background-color: #aa0000;
-            display: block;
-            padding: 13px 50px;
-            color: #ffffff;
-            font-size: 1em;
-        }
-
-        .dropdown-menu a:hover {
-            background-color: #a92e2e;
-        }
-
-        .settings-dropdown:hover .dropdown-menu {
-            display: block;
-        }
+       
 
         .container {
             padding: 50px;
@@ -139,24 +66,21 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="nav-buttons">
-            <a href="signup.html">signup</a>
-            <a href="main.html">home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div class="settings-dropdown">
-            <button>  <img src="image/setting-icon-2000x2048-dbwwhrai.png" alt="Settings Icon" style="width: 24px; height: 24px; vertical-align: middle;">
-            </button>
-            <div class="dropdown-menu">
-                <a href="#">Edit Profile</a>
-                <a href="#">Log Out</a>
-                <a href="#">Settings</a>
-                <a href="#">Help</a>
-            </div>
-        </div>
-    </header>
+  
+    <div id="navbar"></div>
+
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading the navbar:", error));
+    </script>
+    
+    
+
+  
     <div class="container">
         <div class="content">
             <h1>About Us</h1>
