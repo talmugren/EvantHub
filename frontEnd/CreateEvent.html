@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="Create_style.css">
 </head>
 <body> 
     <div class="form-container">
@@ -31,11 +31,25 @@
             <label for="details">Additional details (Optional):</label>
             <textarea id="details" name="details" rows="4"></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="NewEvent()">Submit</button>
 
-            <button type="button" class="cancel-button" onclick="closeForm()">Cancel</button>
+            <button type="button"  class="cancel-button" onclick="closeForm()">Cancel</button>
+            <!--<a href="calendar.html" class="cancel-button"> Cancel </a>-->
         </form>
     </div>
+
+    <!-- Pop-up container that is hidden -->
+<div id="popup-container" class="popup-container" >
+    <div class="popup-content">
+        <p><strong>Event Created Successfully!</strong><br>
+            <strong>Copy next ID to invite your friends</strong> 
+        </p>
+
+        <p> <strong>Event ID:</strong> <span id="event-id"></span> <button id="cpybtn" onclick="copyEventID()"> Copy ID </button></p>
+               
+        <button onclick="closePopup()">Close</button>
+    </div> 
+</div>
 
     <script src="script.js"></script>
 </body>
