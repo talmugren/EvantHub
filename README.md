@@ -13,6 +13,7 @@
 + What problems does the project solve?
 ## Screenshots
 ## Future work
+improvements or additional features to add in the future
 ## Resources
 Any external sources, libraries, APIs, or references used
 ## Team Members
