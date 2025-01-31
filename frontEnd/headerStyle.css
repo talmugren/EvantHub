@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f0e6;
+    padding: 15px;
+}
+
+/* Navbar Buttons */
+header .nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+header .nav-buttons a {
+    text-decoration: none;
+    background-color: #aa0000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #f7f0e6 !important; /* Ensures white text */
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+/* Apply same styling to login/signup */
+header .nav-buttons a.login-signup {
+    background-color: #aa0000;
+    color: #f7f0e6 !important;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+header .nav-buttons a:hover,
+header .nav-buttons a.login-signup:hover {
+    background-color: #9a2d2d;
+    transform: scale(1.05);
+}
+
+/* Prevent visited links from changing color */
+header .nav-buttons a:visited,
+header .nav-buttons a.login-signup:visited {
+    color: #f7f0e6 !important;
+}
